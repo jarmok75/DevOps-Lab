@@ -9,8 +9,9 @@ pipeline {
   stages {
     stage('eka') {
       steps {
-        sh 'sudo npm install'
-        sh 'sudo npm test'
+        sh '''
+npm install'''
+        sh 'npm test'
       }
     }
 
